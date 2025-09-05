@@ -1,0 +1,17 @@
+{
+  "name": "cursotailwind",
+  "version": "1.0.0",
+  "description": "Curso de Tailwind",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buil:styles":"npx @tailwindcss/cli -i ./input.css -o ./assets/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "tailwindcss": "^4.1.12"
+  }
+}

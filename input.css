@@ -1,0 +1,40 @@
+/*Creamos una carpeta .vscode y dentro un archivo settings.json para configurar el input.css lo hacemos para q no nos salga error el import o el theme
+
+ "files.associations": {
+        "*.css":"tailwindcss"
+    }
+    //le decimos q todo q termine de *.css es de tailwindcss y haci va a entender q este archivo esta ocupando css
+*/
+
+@import "tailwindcss";
+/*Creamos nuestra propias variables para poder ocuparlas en cualquier lado y las veces q queremos*/
+
+/* @font-face{
+    font-family: cursive;
+    src:url('/assets/cursive.woff2') format('woff2');
+    font-style:normal;
+    font-weight:100 700;
+    font-display:swap;
+} 
+    HACI LE DECIMOS Q LEA UNA FUENTE CON EL ENLACE PERO TANBIEN PODEMOS COLOCAR LOS VALORES DE LA FUENTE SI O SI SE COLOCA EL font-displat:swap POR SI NO SE CARGA EL NUESTRO Q SE CARGUE LOS OTROS  Y LE INDICAMOS Q QUEREMOS OCUPAR ESA FUENTE Y SE LO DECIMOS EN EL @theme*/
+
+@theme{
+    /**Colores/
+    --color-primary:#09f;/*Todo estos colores nos aparece para utilizar*/
+    --color-primary-light:#ceecff;
+    --color-primary-dark:rgb(0,22,83);
+    --color-asaf-lol:#F02;
+
+    --color-html:#E44D26;
+    
+/*Fuentes PDEMOS CREAR UNA FUENTE NUEVA O SOBREESCRIBIRLAS*/
+    --font-sans:'cursive',system-ui,sans-serif
+
+    /*Breakpoints para la mediaquery*/
+    --breakpoint-xs:350px;
+}
+
+/*Creamos una clase q vamos a utilizar varias veces en ves de componentes solo se ocupa cuando vamos a repetir el mismo css y lo llamamos con la clase q creamos colocamos la utilidad @apply y basecamente nos permite colocar el tailwindcss PERO NO SE RECOMIENDA SE DEBE CREAR UN COMPONENTE PERO ESO SE HACE EN REACT*/
+.social-button{
+    @apply p-2 size-12 sm:size-16 flex items-center justify-center rounded-full transition-transform;
+}

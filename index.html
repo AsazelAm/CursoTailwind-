@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./assets/output.css" rel="stylesheet">
+    <!-- npx @tailwindcss/cli -i ./input.css -o ./assets/output.css --watch POR BUENAS PRACTICAS SE COLOCA EN UN SCRIPT DEL PACKAGE.JSON-->
+     <!-- node --run buil:styles SE EJECUTA HACI  -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    Utilice el CDN de Play para probar Tailwind justo en el navegador sin ningún paso de compilación. El Play CDN está diseñado únicamente con fines de desarrollo, y no está destinado a la producción.
+    
+    Creamos un un taiwind.config.js para arreglar el bug no tocamos nada-->
+</head>
+<body class="max-w-xl mx-auto border border-black min-h-dvh bg-gradient-to-b from-white via-sky-950 to-gray-800"><!--bg-purple: es fondo   mas-w-xl: le decimos que el maximo de ancho es de 576px    mx-auto:lo vamos a centrar con el margin-x en el eje x tanto rigth y left
+    border:que sea borde de 1px border-black:le decimos que vea un border negro
+    min-h-dvh:La altura minima dela la altura dinamica del viewport oseas la vista
+    bg-gradient-to-b from-white via-sky-950 to-gray-800":Hicimos un degradado de arriba hacia abajo from-white:que empieze desde blanco,to-gray-800 y temine en este color , via-sky-950:por medio que sea azul oscuro,to-gray-800:que termine en gris oscuro
+    -->
+    <header class="text-white">
+        <img src="./assets/IMG-20250105-WA0027.jpg" alt="Asaf pelon" class="h-[50vh] object-cover mx-auto mask-radial-at-center mask-radial-from-45% mask-radial-to-65%">
+        <!--h-96:le decimo la altura de la imagen pero se empieza a romper o a estirar para eso no ocura ocupamo object-cover
+        mask-radial-at-center mask-radial-from-50% mask-radial-to-70%:Hicimos una mascara radial en el centro que empieze desde 50% y termine en 70% BASICAMENTE ES UN DEGRADE
+         h-[500px]:Nosotros le podemos colocar el tamaño q deseamos-->
+         <header class="flex flex-col justify-center items-center mb-8 -mt-6">
+            <!--mb-8:margin botton de 8
+            -mt-4:es un margin top con un valor negativo sololo qcolocamos el -mt el guion antes-->
+            <span class="text-yellow-500 font-sans px-3 py-1 border border-yellow-500/50 rounded-full  shadow-sm flex item-center 
+            bg-black/65 cursor-pointer z-10">
+                @ajoruro 
+                <!--text-sky-500:Cuanto mas vajo el valor mas claro cuando mas alto mas oscuro el color color para las letras
+                font-sans:Le podemos decri una tipo de letra
+                p:es padding por todo los lados
+                px-3:es el padding horizontal derecha y izquierda
+                py-1:padding vertical arriba y abajo
+                pr-1:padding solo de la derecha
+                pl-3:padding de izquierda
+                border:que tenga borde
+                border-yellow-500/50:le podemos colocar opacidad todo loq tenga q ver con color 
+                border-black:le decimos el color del borde
+                borde rounded-full:q tenga un borde redondo
+                shadow-sm: q me de sombra
+                bg-black/60:es fondo y la opacidad en 60 se coloca en barray 60 o mas o menos
+                opacity-50:lo q hace es colocar opacidad a todo el elemento
+                cursor-poiter:para la manito cuando pase el mouse
+                z-10:esto es un z-index -->
+            </span>
+            <h1 class="text-asaf-lol text-3xl font-extrabold leading-tight ">Asaf ajoruro mullisaca</h1>
+            <!--font-extrabold:para negrita mas grueso-->
+         </header>
+        <section class="flex gap-2 justify-center">
+            <!--flex:le dijimos q los componentes sean flex q q cada a tenga una separacion con gap-2
+            justify-center:lo centramos-->
+            <a href="#" target="_blank" class="bg-purple-100 social-button hover:bg-purple-500 hover:scale-110 ">
+            <!--p-4:Quiere decir q le coloquemos un paddin por rem
+            w-12:El ancho 
+            h-12:El alto o ocupamos si queremos q tanto el ancho y alto ocupamos el size-12 
+            /flex:que sea flexbos
+            item-center: centrar el contenido vertical
+            justify-center:centrar el contenido horizontal/rounded-full:Border Circular total 
+            PODEMOS OCUPARA VARIANTES COMO
+            hover:bg-purple-500 fondo cuando pase el mouse
+            hover:scale-105 escala el tamaño cuandopase elmause
+            transition-transform:activamos las transiciones de todos -->
+            <svg width="28" height="28" viewBox="0 0 24 24" class="bg-black" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM16.9497 16.9497C16.5549 17.3445 15.9217 17.3445 15.5269 16.9497L8.47487 9.89779C8.08005 9.50297 8.08005 8.86977 8.47487 8.47495C8.86969 8.08013 9.50289 8.08013 9.89771 8.47495L16.9497 15.5269C17.3445 15.9217 17.3445 16.5549 16.9497 16.9497Z" fill="currentColor"/></svg>
+            </a>
+            <!-- Instagram -->
+            <!-- bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-600:Hisimos un gradiente from-yellow-300 empieze desde abajo el amarillo, via-pink-600:Por medio que sea rosado,to-purple-600:que sea violeta arriba 
+            con los numeros podemos cambiar yellow-300 cualquer numero -->
+            <a href="#" target="_blank" class="bg-[#FFF] p-2 size-12 xs:size-16 flex items-center justify-center rounded-full transition-transform bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-700 hover:bg-[#C13584] hover:scale-110  ml-2" aria-label="Instagram">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" rx="6" fill="#E4455F"/>
+                    <path d="M12 7.2A4.8 4.8 0 1 0 12 16.8A4.8 4.8 0 1 0 12 7.2Z" stroke="#fff" stroke-width="2"/>
+                    <circle cx="17.2" cy="6.8" r="1.2" fill="#fff"/>
+                </svg>
+            </a>
+            <!-- Facebook -->
+            <a href="#" target="_blank" class="bg-[#fff] social-button hover:bg-[#145DB2] hover:scale-110 x ml-2" aria-label="Facebook">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" rx="6" fill="#1877F3"/>
+                    <path d="M15.5 8.5H14V7.5C14 7.22386 14.2239 7 14.5 7H15.5V5H14.5C13.1193 5 12 6.11929 12 7.5V8.5H11V10.5H12V19H14V10.5H15.25L15.5 8.5Z" fill="#fff"/>
+                </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="#" target="_blank" class="bg-white p-2 size-12 sm:size-16 flex items-center justify-center rounded-full transition-transform hover:bg-[#004182] hover:scale-110  ml-2" aria-label="LinkedIn">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" rx="6" fill="#0A66C2"/>
+                    <path d="M7.5 9H10V19H7.5V9ZM8.75 7.75C8.05964 7.75 7.5 7.19036 7.5 6.5C7.5 5.80964 8.05964 5.25 8.75 5.25C9.44036 5.25 10 5.80964 10 6.5C10 7.19036 9.44036 7.75 8.75 7.75ZM12 9H14.25V10.25H14.28C14.62 9.66 15.36 9 16.5 9C18.43 9 19 10.17 19 12.08V19H16.5V12.75C16.5 11.84 16.48 10.66 15.25 10.66C14 10.66 13.75 11.7 13.75 12.68V19H12V9Z" fill="#fff"/>
+                </svg>
+            </a>
+            <!-- GitHub -->
+            <a href="#" target="_blank" class="bg-[#181717] p-2 size-12 sm:size-16 flex items-center justify-center rounded-full transition-transform hover:bg-[#333] hover:scale-110  ml-2" aria-label="GitHub">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" rx="6" fill="#181717"/>
+                    <path d="M12 2C6.48 2 2 6.58 2 12.26C2 16.74 4.87 20.5 8.84 21.77C9.34 21.86 9.52 21.57 9.52 21.32C9.52 21.1 9.51 20.39 9.51 19.61C7 20.09 6.34 18.7 6.34 18.7C5.87 17.62 5.18 17.34 5.18 17.34C4.21 16.7 5.25 16.71 5.25 16.71C6.32 16.8 6.86 17.87 6.86 17.87C7.81 19.51 9.3 19.07 9.87 18.83C9.96 18.15 10.23 17.7 10.53 17.45C8.41 17.2 6.18 16.32 6.18 12.97C6.18 11.97 6.54 11.17 7.13 10.54C7.03 10.29 6.71 9.28 7.23 7.97C7.23 7.97 8.01 7.7 9.5 8.7C10.22 8.5 11 8.41 11.78 8.41C12.56 8.41 13.34 8.5 14.06 8.7C15.55 7.7 16.33 7.97 16.33 7.97C16.85 9.28 16.53 10.29 16.43 10.54C17.02 11.17 17.38 11.97 17.38 12.97C17.38 16.33 15.14 17.19 13.01 17.44C13.4 17.76 13.75 18.39 13.75 19.34C13.75 20.61 13.74 21.06 13.74 21.32C13.74 21.57 13.92 21.87 14.43 21.77C18.4 20.5 21.27 16.74 21.27 12.26C21.27 6.58 16.73 2 12 2Z" fill="#fff"/>
+                </svg>
+            </a>
+        </section>
+        <p class="text-[#9eb01a] text-center border-2 border-black mt-4 text-sm px-2 text-balance ">Alumno de la carrera de Sistemas Infomaticos me quiero especializar en CiberSeguridad pero actualmente quiero ser Desarrolador web full stack Mi name is asaf</p>
+        <!--text-center:para centrar el texto 
+        border-2:le decimos q el border tenga un grosor de 2px
+        mt-4:margin top de 16px
+        text-sm:texto pequeño igual se puede colocar el tamaño text-[24px]
+        text-[#9eb01a]: le podemos decir q color q sea el texto
+        px-2:padding horizontal en el eje x
+        text-balance:balance el contenido del texto-->
+
+        <main class="px-4 py-4 pb-16">
+            <div class="grid grid-cols-3 grid-rows-2 gap-2 w-full">
+                <!--grid:q sea displar:grid
+                grid-cols-3:le decimos q de columa son 3
+                grid-rows-2: de filas son dos
+                gap-2:que tenga una separacion de dos 
+                w-full:que ocupe todo el espacio-->
+                <a href="" class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-cyan-100 via-cyan-700 to-cyan-900 border border-cyan-900 flex flex-col items-start hover:scale-105 hover:contrast-125 transition group col-span-2 p-7 min-h-[180px]">
+                <!--relative:colocamos porq vamoa a tener un absolute
+                rounded-3xl:redondea las cars
+                overflow-hidden:que se oculte todo q quede fuera de la caja
+                bg-gradient-to-br from-cyan-100 via-cyan-700 to-cyan-900:le decimos q empieze bg-gradient-to-br from-cyan-100 arriba izquierda  con blanco y termine to-cyan-900 con tipo azul 
+
+                to-br:botton right = arriba izquierda
+                to-bl:botton left=arriba derecho 
+                to-tr:top right=abajo izquierda
+                to-tl:top left=abajo derecho
+                
+                hover:scale-105:q cresca cada ves q pasa el mouse
+                hover:contrast-125: le da mas color o mas vivencia cada ves q pasa el maus
+                cold-span-2:propiedad de grid q le decimo q ocupe dos columnas
+                p-7: le decimos q tenga un paddin en general
+                min-h-[180px]:le decimos la altura minima q va a tener-->    
+                    <span class="absolute bottom-2 left-2 font-bold text-2xl group-hover:-translate-y-1 transition-transform">React.js</span>
+                    <!--absolute bottom-2 left-0: le decimos q sea absolute q este encima y lo acomodamos bottom-2 abajo y left-0 izquieda-->
+                    <svg class="absolute -right-2 -bottom-2 -rotate-10 size-28 group-hover:-rotate-22 group-hover:scale-125 transition-transform" width="98px" height="98px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="6" fill="#181717"/>
+                        <path d="M12 2C6.48 2 2 6.58 2 12.26C2 16.74 4.87 20.5 8.84 21.77C9.34 21.86 9.52 21.57 9.52 21.32C9.52 21.1 9.51 20.39 9.51 19.61C7 20.09 6.34 18.7 6.34 18.7C5.87 17.62 5.18 17.34 5.18 17.34C4.21 16.7 5.25 16.71 5.25 16.71C6.32 16.8 6.86 17.87 6.86 17.87C7.81 19.51 9.3 19.07 9.87 18.83C9.96 18.15 10.23 17.7 10.53 17.45C8.41 17.2 6.18 16.32 6.18 12.97C6.18 11.97 6.54 11.17 7.13 10.54C7.03 10.29 6.71 9.28 7.23 7.97C7.23 7.97 8.01 7.7 9.5 8.7C10.22 8.5 11 8.41 11.78 8.41C12.56 8.41 13.34 8.5 14.06 8.7C15.55 7.7 16.33 7.97 16.33 7.97C16.85 9.28 16.53 10.29 16.43 10.54C17.02 11.17 17.38 11.97 17.38 12.97C17.38 16.33 15.14 17.19 13.01 17.44C13.4 17.76 13.75 18.39 13.75 19.34C13.75 20.61 13.74 21.06 13.74 21.32C13.74 21.57 13.92 21.87 14.43 21.77C18.4 20.5 21.27 16.74 21.27 12.26C21.27 6.58 16.73 2 12 2Z" fill="#fff"/>
+                    </svg>
+                    <!--absolute -right-2 -bottom-2: ocupamos valores negativos para acomodar nuestro svg
+                    -rotate-10: rotamos la imagen de forma negativa hacia izquierda
+                    LE COLOCAMOS GROUP AL CONTENDEO PADRE EN O SUBPADRE OSEA EL a group:PARA AGRUPAR TODO Y HACI PODER OCUPAR group-hover:-rotate-22:PARA Q NOS PERMITAR ROTAR EL SVG CON EL HOVER
+                    transition-transform:Pa q se sineta la transicion mas natural-->
+                    <span class="absolute top-2 left-2 text-xs border rounded-xl py-0.5 px-1 text-black">Curso de +14 Clases</span>
+                </a>
+
+                <a href="" class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-html via-[#F16526] to-white border border-html flex flex-col items-start hover:scale-105 hover:contrast-125 transition group col-span-1 p-7 min-h-[180px]"> 
+                    <span class="absolute bottom-2 left-2 font-bold text-2xl group-hover:-translate-y-1 transition-transform z-10 text-yellow-500">HTML.js</span>
+                    <!--absolute bottom-2 left-0: le decimos q sea absolute q este encima y lo acomodamos bottom-2 abajo y left-0 izquieda-->
+                    <svg class="absolute -right-2 -bottom-2 -rotate-10 size-28 group-hover:-rotate-22 group-hover:scale-125 transition-transform" width="98px" height="98px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="6" fill="#181717"/>
+                        <path d="M12 2C6.48 2 2 6.58 2 12.26C2 16.74 4.87 20.5 8.84 21.77C9.34 21.86 9.52 21.57 9.52 21.32C9.52 21.1 9.51 20.39 9.51 19.61C7 20.09 6.34 18.7 6.34 18.7C5.87 17.62 5.18 17.34 5.18 17.34C4.21 16.7 5.25 16.71 5.25 16.71C6.32 16.8 6.86 17.87 6.86 17.87C7.81 19.51 9.3 19.07 9.87 18.83C9.96 18.15 10.23 17.7 10.53 17.45C8.41 17.2 6.18 16.32 6.18 12.97C6.18 11.97 6.54 11.17 7.13 10.54C7.03 10.29 6.71 9.28 7.23 7.97C7.23 7.97 8.01 7.7 9.5 8.7C10.22 8.5 11 8.41 11.78 8.41C12.56 8.41 13.34 8.5 14.06 8.7C15.55 7.7 16.33 7.97 16.33 7.97C16.85 9.28 16.53 10.29 16.43 10.54C17.02 11.17 17.38 11.97 17.38 12.97C17.38 16.33 15.14 17.19 13.01 17.44C13.4 17.76 13.75 18.39 13.75 19.34C13.75 20.61 13.74 21.06 13.74 21.32C13.74 21.57 13.92 21.87 14.43 21.77C18.4 20.5 21.27 16.74 21.27 12.26C21.27 6.58 16.73 2 12 2Z" fill="#fff"/>
+                    </svg>
+                    <span class="absolute top-2 left-2 text-xs border rounded-xl py-0.5 px-1 text-black">Curso de +14 Clases</span>
+                </a>
+
+                 <a href="" class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-html via-[#F16526] to-white border border-html flex flex-col items-start hover:scale-105 hover:contrast-125 transition group col-span-1 p-7 min-h-[180px]"> 
+                    <span class="absolute bottom-2 left-2 font-bold text-2xl group-hover:-translate-y-1 transition-transform z-10 text-yellow-500">HTML.js</span>
+                    <!--absolute bottom-2 left-0: le decimos q sea absolute q este encima y lo acomodamos bottom-2 abajo y left-0 izquieda-->
+                    <svg class="absolute -right-2 -bottom-2 -rotate-10 size-28 group-hover:-rotate-22 group-hover:scale-125 transition-transform" width="98px" height="98px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="6" fill="#181717"/>
+                        <path d="M12 2C6.48 2 2 6.58 2 12.26C2 16.74 4.87 20.5 8.84 21.77C9.34 21.86 9.52 21.57 9.52 21.32C9.52 21.1 9.51 20.39 9.51 19.61C7 20.09 6.34 18.7 6.34 18.7C5.87 17.62 5.18 17.34 5.18 17.34C4.21 16.7 5.25 16.71 5.25 16.71C6.32 16.8 6.86 17.87 6.86 17.87C7.81 19.51 9.3 19.07 9.87 18.83C9.96 18.15 10.23 17.7 10.53 17.45C8.41 17.2 6.18 16.32 6.18 12.97C6.18 11.97 6.54 11.17 7.13 10.54C7.03 10.29 6.71 9.28 7.23 7.97C7.23 7.97 8.01 7.7 9.5 8.7C10.22 8.5 11 8.41 11.78 8.41C12.56 8.41 13.34 8.5 14.06 8.7C15.55 7.7 16.33 7.97 16.33 7.97C16.85 9.28 16.53 10.29 16.43 10.54C17.02 11.17 17.38 11.97 17.38 12.97C17.38 16.33 15.14 17.19 13.01 17.44C13.4 17.76 13.75 18.39 13.75 19.34C13.75 20.61 13.74 21.06 13.74 21.32C13.74 21.57 13.92 21.87 14.43 21.77C18.4 20.5 21.27 16.74 21.27 12.26C21.27 6.58 16.73 2 12 2Z" fill="#fff"/>
+                    </svg>
+                    <span class="absolute top-2 left-2 text-xs border rounded-xl py-0.5 px-1 text-black">Curso de +14 Clases</span>
+                </a>
+
+                <a href="" class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-cyan-100 via-cyan-700 to-cyan-900 border border-cyan-900 flex flex-col items-start hover:scale-105 hover:contrast-125 transition group col-span-2 p-7 min-h-[180px]"> 
+                    <span class="absolute bottom-2 left-2 font-bold text-2xl group-hover:-translate-y-1 transition-transform">React.js</span>
+                    <!--absolute bottom-2 left-0: le decimos q sea absolute q este encima y lo acomodamos bottom-2 abajo y left-0 izquieda-->
+                    <svg class="absolute -right-2 -bottom-2 -rotate-10 size-28 group-hover:-rotate-22 group-hover:scale-125 transition-transform" width="98px" height="98px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="6" fill="#181717"/>
+                        <path d="M12 2C6.48 2 2 6.58 2 12.26C2 16.74 4.87 20.5 8.84 21.77C9.34 21.86 9.52 21.57 9.52 21.32C9.52 21.1 9.51 20.39 9.51 19.61C7 20.09 6.34 18.7 6.34 18.7C5.87 17.62 5.18 17.34 5.18 17.34C4.21 16.7 5.25 16.71 5.25 16.71C6.32 16.8 6.86 17.87 6.86 17.87C7.81 19.51 9.3 19.07 9.87 18.83C9.96 18.15 10.23 17.7 10.53 17.45C8.41 17.2 6.18 16.32 6.18 12.97C6.18 11.97 6.54 11.17 7.13 10.54C7.03 10.29 6.71 9.28 7.23 7.97C7.23 7.97 8.01 7.7 9.5 8.7C10.22 8.5 11 8.41 11.78 8.41C12.56 8.41 13.34 8.5 14.06 8.7C15.55 7.7 16.33 7.97 16.33 7.97C16.85 9.28 16.53 10.29 16.43 10.54C17.02 11.17 17.38 11.97 17.38 12.97C17.38 16.33 15.14 17.19 13.01 17.44C13.4 17.76 13.75 18.39 13.75 19.34C13.75 20.61 13.74 21.06 13.74 21.32C13.74 21.57 13.92 21.87 14.43 21.77C18.4 20.5 21.27 16.74 21.27 12.26C21.27 6.58 16.73 2 12 2Z" fill="#fff"/>
+                    </svg>
+                    <span class="absolute top-2 left-2 text-xs border rounded-xl py-0.5 px-1 text-black">Curso de +14 Clases</span>
+                </a>
+
+
+            </div>
+        </main>
+    </header>
+
+</body>
+</html>

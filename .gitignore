@@ -1,0 +1,14 @@
+# Archivos y carpetas a ignorar por Git
+node_modules/
+dist/
+build/
+.env
+.DS_Store
+*.log
+# Ignorar archivos temporales de VSCode
+.vscode/
+# Ignorar archivos de sistema
+Thumbs.db
+#ignorar json
+.package-lock.json
+.
